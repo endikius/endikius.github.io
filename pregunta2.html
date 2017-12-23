@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding-top: 8%;
+	padding-left: 15%;
+	padding-right: 15%;
+    font-size: 50px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+.boton-respuesta {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-error {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-correcto {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.pregunta {
+	width: 70%;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div>
+		<h1>Pregunta 1</h1>
+		<p>Parece que toca repetir pais...</p>
+		
+	<img src="pregunta2.jpg">
+
+
+		<p>Que PAÍS es???</p>
+<div class="boton-respuesta" id="1" onclick="funcion(1)">Belgica</div>
+<div class="boton-respuesta" id="2" onclick="funcion(2)">Italia</div>
+<div id="3" class="boton-respuesta" onclick="funcion(3)">Mexico</div>
+<div id="4" class="boton-respuesta" onclick="funcion(4)">España</div>
+
+		</div>
+	</div>
+
+<script>
+	function funcion(numero){
+		document.getElementById(numero).className="boton-error";
+		if(numero == 1){
+			alert("Es pequeñito y lo tenemos casi todo visto... Otro!");
+		}
+
+		if(numero == 2){
+			document.getElementById(numero).className="boton-correcto";
+			alert("Correcto, lo tenemos visitadillo pero faltan muchas cosas por ver");
+			window.location.href='https://endikius.github.io/pregunta3.html';
+		}
+
+		if(numero == 3){
+			alert("No me da la pasta... :_(");
+		}
+
+		if(numero == 4){
+			alert("Pista.... solo falta 1 de los 4");
+		}
+	}
+</script>
+
+</body>
+</html>
