@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding: 15%;
+    font-size: 50px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+.boton-respuesta {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-error {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-correcto {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.pregunta {
+	width: 70%;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div>
+		<h1>Pregunta 1</h1>
+		<p>Vamos a por una pregunta sencillita.</p>
+		
+	<img src="pregunta1.jpg">
+
+
+		<p>Que es???</p>
+<div class="boton-respuesta" id="1" onclick="funcion(1)">Una mochila</div>
+<div class="boton-respuesta" id="2" onclick="funcion(2)">Unas sandalias</div>
+<div id="3" class="boton-respuesta" onclick="funcion(3)">Un viaje</div>
+<div id="4" class="boton-respuesta" onclick="funcion(4)">Una nueva amiga</div>
+
+		</div>
+	</div>
+
+<script>
+	function funcion(numero){
+		document.getElementById(numero).className="boton-error";
+		if(numero == 1){
+			alert("Pista! Mochila puede hacer falta por culpa del regalo pero no es eso...");
+		}
+
+		if(numero == 2){
+			alert("Tantas parafernalia ibamos a montar para eso, que va!");
+		}
+
+		if(numero == 3){
+			document.getElementById(numero).className="boton-correcto";
+			alert("Correcto, veamos si sacamos el destino poco a poco...");
+			window.location.href='https://endikius.github.io/pregunta2.html';
+		}
+
+		if(numero == 4){
+			alert("Error, pobre Morena que le saldría más competencia!!!");
+		}
+	}
+</script>
+
+</body>
+</html>
