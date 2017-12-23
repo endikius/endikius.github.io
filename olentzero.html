@@ -1,6 +1,36 @@
 <html>
 <head>
 	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding: 15%;
+    font-size: 25px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+
+.button {
+	text-align: center;
+}
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 65px;
+}
+
+</style>
 </head>
 <body>
 	<div>
@@ -8,9 +38,18 @@
 		<p>pero no, simplemente te va a poner a prueba y si te lo ganas, pues tendrás un mejor Olentzero</p>
 <br><br>
 		<p>Cuando quieras empezamos, tienes 5 minutos o se acaba el tiempo.....</p>
-		<button >
-<button type="button" onclick="window.location.href=www.marca.com">Empezar test!!</button>
-		</button>
+		<br><br>
+		<div class="boton">
+<button class="button" type="button" onclick="funcion()">Empezar test!!</button>
+		</div>
 	</div>
+
+<script>
+	function funcion(){
+		alert("Empieza a correr el tiempo....");
+		window.location.href='https://endikius.github.io/pregunta1.html';
+	}
+</script>
+
 </body>
 </html>
