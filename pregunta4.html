@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding-top: 8%;
+	padding-left: 15%;
+	padding-right: 15%;
+    font-size: 50px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+.boton-respuesta {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-error {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-correcto {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.pregunta {
+	width: 70%;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div>
+		<h1>Bonus Track</h1>
+		<p>Esta es mi rubia valiente!!!!</p>
+		
+	<img src="pregunta4.jpg"  width="100%">
+
+
+		<p>Dime que se esconde aqui dentro para ganarte una visita</p>
+<div class="boton-respuesta" id="1" onclick="funcion(1)">No hay nada especial</div>
+<div class="boton-respuesta" id="2" onclick="funcion(2)">Un La primera cena</div>
+<div id="3" class="boton-respuesta" onclick="funcion(3)">Una copia de la Gioconda</div>
+<div id="4" class="boton-respuesta" onclick="funcion(4)">La ultima cena</div>
+
+		</div>
+	</div>
+
+<script>
+	function funcion(numero){
+		document.getElementById(numero).className="boton-error";
+		if(numero == 1){
+			alert("Algo habrá no? Si no me hubiera saltado este paso, jeje.");			
+		}
+
+		if(numero == 2){
+			alert("Existe????");
+		}
+
+		if(numero == 3){
+			alert("Creo que no, prueba otra a ver");
+		}
+		if(numero == 4){
+			document.getElementById(numero).className="boton-correcto";
+			alert("Correcto, Pues ya que has acertado lo incluimos en nuestro planning ;)");
+			window.location.href='https://endikius.github.io/final.html';
+		}
+	}
+</script>
+
+</body>
+</html>
