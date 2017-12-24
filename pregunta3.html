@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding-top: 8%;
+	padding-left: 15%;
+	padding-right: 15%;
+    font-size: 50px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+.boton-respuesta {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-error {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.boton-correcto {
+	margin-top: 20px;
+	width: 85%;
+	padding: 5%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+}
+
+.pregunta {
+	width: 70%;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div>
+		<h1>Pregunta 3</h1>
+		<p>Vamos a por la ciudad</p>
+		
+	<img src="pregunta3.jpg" width="100%">
+
+
+		<p>Y ciudad???</p>
+<div class="boton-respuesta" id="1" onclick="funcion(1)">Milan</div>
+<div class="boton-respuesta" id="2" onclick="funcion(2)">Siena</div>
+<div id="3" class="boton-respuesta" onclick="funcion(3)">Verona</div>
+<div id="4" class="boton-respuesta" onclick="funcion(4)">Genova</div>
+
+		</div>
+	</div>
+
+<script>
+	function funcion(numero){
+		document.getElementById(numero).className="boton-error";
+		if(numero == 1){
+			document.getElementById(numero).className="boton-correcto";
+			alert("Correcto, me ha dicho un pajarito que tienen una iglesia muy bonita aunque la foto sea de la parte de arriba ;)");
+			window.location.href='https://endikius.github.io/bonusTrack.html';
+		}
+
+		if(numero == 2){
+			alert("Demasiado cerca de Roma...");
+		}
+
+		if(numero == 3){
+			alert("Lo dejamos para nuestro viaje largo por el norte");
+		}
+
+		if(numero == 4){
+			alert("Pista, si haces 100 km al norte en un mapa encontrarás la respuesta");
+		}
+	}
+</script>
+
+</body>
+</html>
