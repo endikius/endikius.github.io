@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Introduccion</title>
+	<style>
+div {
+	background-color: #cccccc;
+	opacity: 0.9;
+	padding: 15%;
+    font-size: 25px;
+}
+
+body {
+   background-image: url("https://endikius.github.io/arbol.jpg");
+   background-size: 100%;
+}
+
+
+.button {
+	text-align: center;
+}
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 65px;
+}
+
+</style>
+</head>
+<body>
+	<div>
+		<p>Y ahora... con el viaje ganado tienes dos opciones.</p>
+		<p>Quieres jugar por un extra o nada???? Es una pregunta más complicada pero que creo que conoces la respuesta...</p>
+<br><br>
+		<br><br>
+		<div class="boton">
+<button class="button" type="button" onclick="funcion(1)">Doble o nada!!!</button>
+		</div>
+		<div class="boton">
+<button class="button" type="button" onclick="funcion(2)">Me planto!!</button>
+		</div>
+	</div>
+
+<script>
+	function funcion(opcion){
+		if(opcion == 1){
+			window.location.href='https://endikius.github.io/pregunta4.html';
+		}
+		if(opcion == 2){
+			window.location.href='https://endikius.github.io/gallina.html';
+		}
+	}
+</script>
+
+</body>
+</html>
